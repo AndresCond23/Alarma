@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/devicesView"
+       android:orientation="vertical"
+       android:visibility="visible"
+       >
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Dispositivos Bluetooth"
+           android:textAlignment="center"
+           android:textSize="20sp"
+           >
+       </TextView>
+
+       <ListView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/listDevices"
+           android:layout_marginTop="10dp"
+           >
+       </ListView>
+
+   </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/controlView"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@mipmap/alarma"
+        >
+
+
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/baseline_notifications_active_24"
+                android:backgroundTint="@color/purple_500"
+                android:id="@+id/btnNotifications"
+                >
+            </Button>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/baseline_stop_circle_24"
+                android:backgroundTint="@color/purple_500"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btnSound"
+                >
+            </Button>
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/baseline_bluetooth_disabled_24"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/purple_500"
+                android:id="@+id/btnBluetoothDesactive"
+                >
+            </Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:text=""
+            android:id="@+id/txtRx"
+            >
+        </TextView>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
